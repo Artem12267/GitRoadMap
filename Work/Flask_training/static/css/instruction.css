@@ -1,0 +1,228 @@
+
+
+.basic_main{
+  display: flex;
+}
+.sticky{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  height: auto;
+  width: 100%;
+  height: 6%;
+  background-color: #ffffff;
+  font-family: "Audiowide", sans-serif;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 2px;
+}
+
+.icon {
+  background-color: #303b44;
+  width: 100%;
+  height: 6%;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  background-color: #ffffff;
+  font-weight: bold;
+  width: 25%;
+  color: #3c1f1a;
+  text-decoration: none;
+  outline: none;
+  border: 0px;
+  transition: .2s;
+} 
+.button:hover {
+  background: #f5f5f5 linear-gradient(#f1f1f1, #e9e9e9 80%);
+}
+.button:active {
+  background: rgb(180, 180, 180) linear-gradient(#f5f5f5 20%, #f5f5f5);
+  box-shadow:
+   0 2px rgb(86,38,6),
+   0 1px 6px rgba(0,0,0,.4),
+   inset 0 1px rgba(255,255,255,.3),
+   inset 0 0 3px rgba(255,255,255,.5);
+  -webkit-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+}
+
+.button_up {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  font-weight: bold;
+  width: 60px;
+  height: 100vh;
+  color: #00af7b;
+  text-decoration: none;
+  outline: none;
+  border: 0px;
+  transition: .2s;
+} 
+.button_up:hover {
+  background: #f5f5f5 linear-gradient(#f1f1f1, #e9e9e9 80%);
+}
+.button_up:active {
+  background: rgb(180, 180, 180) linear-gradient(#f5f5f5 20%, #f5f5f5);
+  box-shadow:
+   0 2px rgb(86,38,6),
+   0 1px 6px rgba(0,0,0,.4),
+   inset 0 1px rgba(255,255,255,.3),
+   inset 0 0 3px rgba(255,255,255,.5);
+  -webkit-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+}
+
+.url_margin{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 1 px solid rgb(255, 255, 255);
+  transition-duration: 0.5s;
+  margin-left: 25px;
+  padding-top: 20px;
+}
+.url_margin:hover{
+  background-color: #f0d3ae;
+  padding-left: 30px;
+}
+
+.carusel{
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  top: 100px;
+  box-shadow: 0 0 10px;
+}
+.TEXT{
+  width: 45%;
+  display: flex;
+  position: relative;
+  left: 20vw;
+  flex-direction: column;
+  line-height: 1.5em;
+}
+.section_main{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 40px 40px 20px 40px;
+  background-color: #ffffff;
+  top: 2%;
+  box-shadow: 0 0 1px;
+}
+.section_next{
+  display: block;
+  width: 100%;
+  padding: 25px 40px 30px 40px;
+  background-color: #ffffff;
+  margin-top: 50px;
+  box-shadow: rgb(53, 53, 53);
+  box-shadow: 0 0 1px;
+}
+.all_content-right{
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+.text_content-right{
+  display: block;
+  padding: 20px 40px 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 1px;
+}
+.side_bar{
+  display: block;
+}
+
+.side_bar_next{
+  display: block;
+  margin-top: 4%;
+  border-top: 1px solid #cecece;
+}
+.h7_margin-side_bar_next{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.h6_color-side_bar{
+  color: #303b44;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 15%;
+  background-color: #f5f5f5;
+  border-top: 1px solid #cecece;
+  margin-top: 100px;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 830px) {
+ .TEXT {
+   width: 90%;
+   margin: auto;
+   line-height: 1.8em;
+ }
+ .carusel {
+  width: 90%;
+  margin: auto;
+ }
+ .sticky{
+  width: 90%;
+  background-color: #f5f5f5;
+  font-family: "Audiowide", sans-serif;
+  margin-bottom: 70px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+}
+.button {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  width: 100%;
+  height: 5rem;
+  color: #3c1f1a;
+  text-decoration: none;
+  outline: none;
+  border: 0px;
+  transition: .2s;
+  } 
+  .footer {
+    height: 8%;
+  }
+}
+@media screen and (max-width: 430px){
+  .TEXT {
+    width: 90%;
+    margin: auto;
+    line-height: 1.2em;
+  }
+  .carusel {
+    width: 90%;
+    margin: auto;
+  }
+  .sticky{
+    width: 90%;
+    background-color: #f5f5f5;
+    font-family: "Audiowide", sans-serif;
+    margin-bottom: 70px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;}
+}
+

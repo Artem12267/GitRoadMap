@@ -1,0 +1,20 @@
+.body{
+    width: 100vw;
+    min-height: 80%;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+main{
+    background-color: transparent;
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 60vw;
+    display: flex;
+}
+

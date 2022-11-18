@@ -1,0 +1,82 @@
+<html class="html">
+    <head>
+        <link rel="stylesheet" type="text/css" href="static/css/main.css">
+        <link rel="stylesheet" type="text/css" href="static/css/sneakers_main.css">
+        <link rel="stylesheet" type="text/css" href="static/css/navbar_pre-launch.css">
+        <link rel="stylesheet" type="text/css" href="static/css/navbar_main.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="body">
+        <div class="navbar_main_cover">
+            <nav class="navbar_main">
+                <ul class="ul-navbar_main">
+
+                    <li class="li-first">
+                        <a href="/sneakers_main" class="a-navbar_main">
+                            <picture>
+                                <img src="static\img\logo.jpg" alt="">
+                            </picture>
+                        </a>
+                    </li>
+
+                    <li class="li-navbar_main">
+                        <a href="#" class="a-navbar_main"> Новинки </a>
+                    </li>
+
+                    <li class="li-navbar_main">
+                        <a href="#" class="a-navbar_main"> Бренды </a>
+                    </li>
+
+                    <li class="li-navbar_main">
+                        <a href="/men" class="a-navbar_main"> Мужское </a>
+                    </li>
+
+                    <li class="li-navbar_main">
+                        <a href="#" class="a-navbar_main"> Женское </a>
+                    </li>
+
+                </ul>
+
+                    <!-- <div class="icon">
+                        <img src="static\img\icon_img.png" alt="" class="ff">
+                    </div> -->
+            </nav>
+            <div class="navbar_main_buttons">
+                <button>
+                    <img src="static\img\korzina.png" alt="">
+                </button>
+                <button>
+                    <img src="static\img\profil.png" alt="">
+                </button>
+            </div>
+        </div>
+        <main>
+            <div class="content">
+                <h1 class="_h1">Регистрация</h1>
+                <form action='/registration' method='post' class="data_entry">
+                    <p>{{message}}</p>
+                    <input type="text" name="login" placeholder="Логин" class="registr_forms">
+
+                    <input type="password" name="password" placeholder="Пароль" class="registr_forms">
+
+                    <input type="password" name="password_check" placeholder="Повторите пароль" class="registr_forms">
+
+                    <input type="text" name="phone_number" placeholder="Номер Телефона" class="registr_forms">
+
+                    <input type="text" name="email" placeholder="email" class="registr_forms">
+                    
+                    <button class="btn_registr" type="submit">Зарегестрироваться</button>
+                    <a class="url_margin" href="/login">Вход</a>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
+

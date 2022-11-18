@@ -1,0 +1,12 @@
+
+
+.img_men-women{
+    margin-top: 5vh;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_img_men-women{
+    margin-top: 10px;
+}
