@@ -92,8 +92,31 @@ def sneakers_main():
 #             row.amount = 0
     return render_template('sneakers_main.html')#, data=data)
 
-@app.route('/men')
+@app.route('/men', methods=['GET', 'POST'])
 def men():
+    DictItems = {
+        "id" : [],
+        "name" : [],
+        "description" : [],
+        "price" : [],
+        "img" : []
+        }
+
+    DataFrom_Items = db_user.GettingData_Items()
+
+    for data in DataFrom_Items:
+        passing = []
+        for item in data:
+            item = str(item)
+            passing.append(item)
+
+            if len(passing) == 5:
+                DictItems["id"].append(passing[0])
+                DictItems["name"].append(passing[1])
+                DictItems["description"].append(passing[2])
+                DictItems["price"].append(passing[3])
+                DictItems["img"].append(passing[4])
+        
     return render_template('men.html')
 
 

@@ -45,3 +45,19 @@ class flask_user:
                 conn.close()
                 print("Conn close")
 
+    def GettingData_Items(self):
+        try:
+            conn = sqlite3.connect(self.dbName, check_same_thread=False)
+            cursor = conn.cursor()
+
+            with conn:
+                cursor.execute("SELECT * FROM 'items'")
+            return cursor.fetchall()
+
+        except sqlite3.Error as error:
+            print("Error while connecting to sqlite", error)
+        finally:
+            if conn:
+                conn.close()
+                print("Conn close")
+
