@@ -96,8 +96,9 @@ def sneakers_main():
 def men():
     DictItems = {
         "id" : [],
+        "brand" : [],
+        "gender" : [],
         "name" : [],
-        "description" : [],
         "price" : [],
         "img" : []
         }
@@ -110,14 +111,17 @@ def men():
             item = str(item)
             passing.append(item)
 
-            if len(passing) == 5:
+            if len(passing) == 6:
                 DictItems["id"].append(passing[0])
-                DictItems["name"].append(passing[1])
-                DictItems["description"].append(passing[2])
-                DictItems["price"].append(passing[3])
-                DictItems["img"].append(passing[4])
-        
-    return render_template('men.html')
+                DictItems["brand"].append(passing[1])
+                DictItems["gender"].append(passing[2])
+                DictItems["name"].append(passing[3])
+                DictItems["price"].append(passing[4])
+                DictItems["img"].append(passing[5])
+
+    print(DictItems["name"])
+
+    return render_template('men.html', data=DictItems)
 
 
 # @app.route('/cart')
