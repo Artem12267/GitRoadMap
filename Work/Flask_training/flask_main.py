@@ -107,6 +107,10 @@ def men():
 
     for data in DataFrom_Items:
         passing = []
+        if "Женские кроссовки" in data:
+            print(data)
+            continue
+
         for item in data:
             item = str(item)
             passing.append(item)
@@ -119,7 +123,7 @@ def men():
                 DictItems["price"].append(passing[4])
                 DictItems["img"].append(passing[5])
 
-    print(DictItems["name"])
+    print(DictItems)
 
     return render_template('men.html', data=DictItems)
 
