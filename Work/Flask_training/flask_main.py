@@ -72,6 +72,35 @@ def main_products():
 
 @app.route('/sneakers_main', methods=['GET', 'POST'])
 def sneakers_main():
+    DictItems = {
+        "id" : [],
+        "brand" : [],
+        "gender" : [],
+        "name" : [],
+        "price" : [],
+        "img" : []
+        }
+
+    DataFrom_Items_cover = db_user.GettingData_Items()
+    DataFrom_Items = DataFrom_Items_cover[-4:]
+
+    for data in DataFrom_Items:
+        passing = []
+        for item in data:
+            item = str(item)
+            passing.append(item)
+
+            if len(passing) == 6:
+                DictItems["id"].append(passing[0])
+                DictItems["brand"].append(passing[1])
+                DictItems["gender"].append(passing[2])
+                DictItems["name"].append(passing[3])
+                DictItems["price"].append(passing[4])
+                DictItems["img"].append(passing[5])
+
+    print(DictItems)
+
+
 #     if request.method == 'POST':
 #         item_id = request.form['item_id']
 #         row = db.cart.get('item_id', item_id)
@@ -90,10 +119,10 @@ def sneakers_main():
 #             row.amount = res.amount
 #         else:
 #             row.amount = 0
-    return render_template('sneakers_main.html')#, data=data)
+    return render_template('sneakers_main.html', data=DictItems)
 
-@app.route('/men', methods=['GET', 'POST'])
-def men():
+@app.route('/man', methods=['GET', 'POST'])
+def man():
     DictItems = {
         "id" : [],
         "brand" : [],
@@ -125,7 +154,7 @@ def men():
 
     print(DictItems)
 
-    return render_template('men.html', data=DictItems)
+    return render_template('man.html', data=DictItems)
 
 
 # @app.route('/cart')

@@ -12,7 +12,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </head>
 
-    <body class="body">
+    <body class="body" style="background-color: white;">
         <div class="navbar_main_cover">
             <nav class="navbar_main">
                 <ul class="ul-navbar_main">
@@ -59,11 +59,11 @@
 
         <main>
             <div class="content">
-                <div class="img_men-women">
-                    <a href="/men">
+                <div class="cover-img_man-woman">
+                    <a href="/man">
                         <div>
                             <picture>
-                                <img src="static\img\man.jpg" alt="">
+                                <img src="static\img\man.jpg" class="img-man_woman">
                             </picture>
                         </div>
                         <div class="title_img_men-women">
@@ -72,12 +72,84 @@
                     </a>
                     <a href="">
                         <picture>
-                            <img src="static\img\women.jpg" alt="">
+                            <img src="static\img\woman.jpg" class="img-man_woman">
                         </picture>
-                        <div class="title_img_men-women">
+                        <div class="title_img_man-woman">
                             <h3>Женское</h3>
                         </div>
                     </a>
+                </div>
+                <div class="product-catalog__cover">
+                    <div class="product-catalog__sneakers-main">
+                            <!--------------------------  0  -------------------------->
+                        <div class="product-card">
+                            <div class="product-card__overlay">
+                                <a href="">
+                                    <div class="product-content__img">
+                                        <picture>
+                                            <img src={{data["img"][0]}} style="height: 248px; width: 248px;">
+                                        </picture>
+                                    </div>
+                                    <div class="product-content__text">
+                                        <h2 class="h2-product__text"> {{data["brand"][0]}} </h2>
+                                        <h4 class="h4-product__text"> {{data["gender"][0]}} <br> {{data["name"][0]}} </h4>
+                                        <h2 class="h2-product__text"> {{data["price"][0]}} </h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                            <!--------------------------  1  -------------------------->
+                        <div class="product-card">
+                            <div class="product-card__overlay">
+                                <a href="">
+                                    <div class="product-content__img">
+                                        <picture>
+                                            <img src={{data["img"][1]}} style="height: 248px; width: 248px;">
+                                        </picture>
+                                    </div>
+                                    <div class="product-content__text">
+                                        <h2 class="h2-product__text"> {{data["brand"][1]}} </h2>
+                                        <h4 class="h4-product__text"> {{data["gender"][1]}} <br> {{data["name"][1]}} </h4>
+                                        <h2 class="h2-product__text"> {{data["price"][1]}} </h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                            <!--------------------------  2  -------------------------->
+                        <div class="product-card">
+                            <div class="product-card__overlay">
+                                <a href="">
+                                    <div class="product-content__img">
+                                        <picture>
+                                            <img src={{data["img"][2]}} style="height: 248px; width: 248px;">
+                                        </picture>
+                                    </div>
+                                    <div class="product-content__text">
+                                        <h2 class="h2-product__text"> {{data["brand"][2]}} </h2>
+                                        <h4 class="h4-product__text"> {{data["gender"][2]}} <br> {{data["name"][2]}} </h4>
+                                        <h2 class="h2-product__text"> {{data["price"][2]}} </h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                            <!--------------------------  3  -------------------------->
+                        <div class="product-card">
+                            <div class="product-card__overlay">
+                                <a href="">
+                                    <div class="product-content__img">
+                                        <picture>
+                                            <img src={{data["img"][3]}} style="height: 248px; width: 248px;">
+                                        </picture>
+                                    </div>
+                                    <div class="product-content__text">
+                                        <h2 class="h2-product__text"> {{data["brand"][3]}} </h2>
+                                        <h4 class="h4-product__text"> {{data["gender"][3]}} <br> {{data["name"][3]}} </h4>
+                                        <h2 class="h2-product__text"> {{data["price"][3]}} </h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

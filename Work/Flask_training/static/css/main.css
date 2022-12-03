@@ -15,7 +15,6 @@ main{
 
 .content{
     width: 60vw;
-    display: flex;
 }
 
 .footer{
@@ -47,6 +46,10 @@ main{
     align-content: flex-start;
     gap: 2.4rem;
 }
+.a-product-card:hover{
+    background-color: #7c7c7c;
+}
+
 
 .product-content__text{
     display: flex;

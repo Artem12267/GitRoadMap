@@ -1,12 +1,24 @@
 
 
-.img_men-women{
+.cover-img_man-woman{
     margin-top: 5vh;
     width: 60vw;
     display: flex;
     justify-content: space-between;
 }
 
-.title_img_men-women{
+.title_img_man-woman{
     margin-top: 10px;
+}
+
+.img-man_woman{
+    width: 550px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.product-catalog__sneakers-main{
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
 }

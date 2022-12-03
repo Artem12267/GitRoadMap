@@ -17,6 +17,6 @@
 #     print("!!!!!!!!!!!!!!")
 
 
-a = (3, 'Helly Hansen', 'Мужские кроссовки', 'Canyon ULLR Helly Tech', 13490, 'static\\img\\3.jpg')
-del a
-print(a)
+a = [3, 'Helly Hansen', 'Мужские кроссовки', 'Canyon ULLR Helly Tech', 13490, 'static\\img\\3.jpg']
+
+print(a[-4:])
