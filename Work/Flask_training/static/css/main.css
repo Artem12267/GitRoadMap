@@ -46,7 +46,12 @@ main{
     align-content: flex-start;
     gap: 2.4rem;
 }
-.a-product-card:hover{
+.a-product__text{
+    text-decoration:none;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.a-product__text:hover{
     background-color: #7c7c7c;
 }
 
@@ -57,14 +62,25 @@ main{
     align-items: center;
 }
 
-.h2-product__text{
-    margin-top: 4px;
+.h3-product__brand{
+    color: black;
+    margin-top: 15px;
     margin-bottom: 4px;
 }
 
-.h4-product__text{
+.h3-product__price{
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 4px;
+}
+
+.h5-product__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #7c7c7c;
     margin-top: 3px;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
 }
 
 .product-card{

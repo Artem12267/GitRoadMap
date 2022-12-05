@@ -238,6 +238,12 @@ def login():
     return render_template('login.html')
 
 
+@app.route('/pattern')
+def pattern():
+
+    return render_template('pattern.html')
+
+
 # @app.route("/logout")
 # @login_required
 # def logout():

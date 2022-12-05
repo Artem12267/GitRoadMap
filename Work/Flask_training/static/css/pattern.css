@@ -1,0 +1,20 @@
+.product-data__cover{
+    width: 60vw;
+    min-height: 50vh;
+    margin-top: 4vh;
+}
+
+.product-data{
+    min-height: 50vh;
+    display: flex;
+}
+
+.pictures-section{
+    min-height: 50vh;
+    width: 42vw;
+}
+
+.data-section{
+    min-height: 50vh;
+    width: 18vw;
+}
