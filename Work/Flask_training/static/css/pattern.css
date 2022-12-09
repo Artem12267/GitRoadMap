@@ -10,6 +10,8 @@
 }
 
 .pictures-section{
+    display: flex;
+    flex-direction: row;
     min-height: 50vh;
     width: 42vw;
 }
@@ -17,4 +19,19 @@
 .data-section{
     min-height: 50vh;
     width: 18vw;
+}
+
+.detailed-item__img{
+    width: 681px;
+    height: 681px;
+}
+
+.detailed-item__icon{
+    width: 48px;
+    height: 48px;
+}
+
+.data-section{
+    background-color: aliceblue;
+    border-radius: 5px;
 }
